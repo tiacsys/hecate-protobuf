@@ -1,0 +1,10 @@
+[package]
+name = "hecate-protobuf"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+prost = "0.12.4"
+
+[build-dependencies]
+prost-build = { version = "0.12.4" }
