@@ -8,9 +8,23 @@ message Acceleration {
     required float z = 3;
 }
 
+message MagnetometerData {
+    required float x = 1;
+    required float y = 2;
+    required float z = 3;
+}
+
+message GyroscopeData {
+    required float x = 1;
+    required float y = 2;
+    required float z = 3;
+}
+
 message SensorDataSample {
     required float time = 1;
     required Acceleration acceleration = 2;
+    required MagnetometerData magnetometer = 3;
+    required GyroscopeData gyroscope = 4;
 }
 
 message SensorData {
