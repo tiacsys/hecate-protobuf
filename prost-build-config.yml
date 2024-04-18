@@ -1,0 +1,19 @@
+---
+includes: []
+files: [src/hecate.proto]
+output: src
+messages:
+  - paths: [hecate.Acceleration]
+    attrs:
+      - derive(serde::Serialize, serde::Deserialize)
+      - serde(default)
+enums:
+  - paths: []
+    attrs:
+      - derive(serde::Serialize, serde::Deserialize)
+      - serde(rename_all = "lowercase")
+fields:
+  - paths: []
+    attrs:
+btree_map: ['.']
+bytes: ['.']

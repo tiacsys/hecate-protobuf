@@ -1,3 +1,4 @@
 pub use prost;
+pub use prost::Message;
 
-include!(concat!(env!("OUT_DIR"), "/hecate.rs"));
+include!("./hecate.rs");

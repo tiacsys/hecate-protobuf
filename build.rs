@@ -1,5 +1,8 @@
-use std::io::Result;
+use anyhow::Result;
+use prost_build_config::{BuildConfig, Builder};
+
 fn main() -> Result<()> {
-    prost_build::compile_protos(&["src/hecate.proto"], &["src/"])?;
+    let config: BuildConfig = serde_yaml::from_str(include_str!("./prost-build-config.yml"))?;
+    Builder::from(config).build_protos();
     Ok(())
 }
