@@ -7,3 +7,13 @@ message Acceleration {
     required float y = 2;
     required float z = 3;
 }
+
+message SensorDataSample {
+    required float time = 1;
+    required Acceleration acceleration = 2;
+}
+
+message SensorData {
+    required string id = 1;
+    repeated SensorDataSample samples = 2;
+}

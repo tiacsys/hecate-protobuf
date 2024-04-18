@@ -7,6 +7,14 @@ messages:
     attrs:
       - derive(serde::Serialize, serde::Deserialize)
       - serde(default)
+  - paths: [hecate.SensorDataSample]
+    attrs:
+      - derive(serde::Serialize, serde::Deserialize)
+      - serde(default)
+  - paths: [hecate.SensorData]
+    attrs:
+      - derive(serde::Serialize, serde::Deserialize)
+      - serde(default)
 enums:
   - paths: []
     attrs:
