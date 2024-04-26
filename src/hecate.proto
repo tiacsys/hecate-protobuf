@@ -28,6 +28,5 @@ message SensorDataSample {
 }
 
 message SensorData {
-    required string id = 1;
-    repeated SensorDataSample samples = 2;
+    repeated SensorDataSample samples = 1;
 }
