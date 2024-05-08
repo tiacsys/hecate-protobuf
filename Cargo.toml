@@ -4,8 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-prost = "0.12.4"
-serde = { version = "1.0.197", features = ["derive"] }
+prost = { version = "0.12.4", default-features = false, features = ["prost-derive"] }
+serde = { version = "1.0.197", default-features = false, features = ["alloc", "derive"] }
 
 [build-dependencies]
 serde_yaml = "0.9.34"
